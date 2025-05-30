@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vedika Kumar Graduate AI Engineer Resume">
+    <title>Vedika Kumar - Graduate AI Engineer Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #222; /* Even darker text for stronger contrast */
+            line-height: 1.3; /* More compact line height */
+        }
+
+        .resume-container {
+            max-width: 8.5in; /* Standard resume width */
+            margin: 0.5in auto; /* Top/bottom margin, auto left/right for centering */
+            padding: 0.5in;
+            background-color: #fff;
+            /* Removed box-shadow for a flatter, print-like look as per image */
+            /* Removed border-radius as per image */
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 0.5rem; /* More compact header */
+        }
+
+        .header-name {
+            font-size: 2.2rem; /* Larger for prominence */
+            font-weight: 700; /* Bold */
+            margin-bottom: 0.1rem; /* Closer to the subheading */
+            letter-spacing: 0.03em; /* Slight letter spacing */
+            color: #111;
+        }
+
+        .header-subheading {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 0.5rem; /* Space before contact info */
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1rem; /* More space between contact items */
+            font-size: 0.9rem;
+            color: #555;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            margin-bottom: 0.5rem; /* Space before the separator */
+        }
+
+        .contact-info a {
+            color: inherit; /* Inherit color from parent, so no blue highlight */
+            text-decoration: none; /* No underline */
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: #0a66c2; /* Still keep hover effect */
+        }
+
+        .thin-separator {
+            border: none;
+            border-top: 1px solid #ccc; /* Very thin, light grey line */
+            margin: 0.75rem 0 1.25rem 0; /* Space it out as per image */
+        }
+
+        .section-heading {
+            font-size: 1.2rem; /* Slightly smaller than before, bold */
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.5rem; /* More compact */
+            border-bottom: 1px solid #333; /* Thin border as per image */
+            padding-bottom: 0.15rem; /* Less padding */
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #222;
+        }
+
+        .entry-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end; /* Align to bottom for a cleaner line */
+            margin-top: 0.75rem; /* Space above each entry title */
+            margin-bottom: 0.1rem; /* Very close to location/details */
+        }
+
+        .entry-title h3 {
+            font-size: 1.05rem; /* Slightly smaller, clean */
+            font-weight: 600; /* Semi-bold */
+            color: #222;
+        }
+
+        .entry-title p {
+            font-size: 0.88rem; /* Slightly smaller font for dates/tech */
+            color: #555;
+            white-space: nowrap;
+        }
+
+        .location-info {
+            font-size: 0.88rem; /* Consistent with dates */
+            color: #555;
+            margin-top: 0; /* No negative margin needed with flex-end alignment */
+            margin-bottom: 0.5rem; /* More compact below location */
+        }
+
+        ul {
+            list-style: none; /* Remove default bullets */
+            padding-left: 1rem; /* Indent bullets */
+            margin-bottom: 0.75rem;
+        }
+
+        ul li {
+            position: relative; /* For custom bullets */
+            margin-bottom: 0.2rem; /* Very compact list items */
+            font-size: 0.9rem; /* Slightly smaller for compactness */
+            padding-left: 0.75rem; /* Space for custom bullet */
+        }
+
+        ul li::before {
+            content: "\2022"; /* Unicode for a small dot bullet */
+            color: #555; /* Color of the bullet */
+            position: absolute;
+            left: 0;
+            font-size: 0.9em; /* Adjust size if needed */
+            line-height: inherit;
+        }
+
+        .summary-text {
+            font-size: 0.95rem; /* Slightly smaller for compactness */
+            line-height: 1.4; /* More compact line height for summary */
+            margin-bottom: 1rem;
+        }
+
+        /* Skills list formatting (already good, but slightly refined for compactness) */
+        .skills-list ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem 1.2rem; /* More compact gap */
+            padding-left: 0; /* No indent for skill categories */
+            list-style-type: none; /* Ensure no bullets */
+            margin-bottom: 0.5rem; /* More compact */
+        }
+
+        .skills-list li {
+            margin-bottom: 0;
+            font-size: 0.9rem; /* Consistent with other list items */
+            padding-left: 0; /* No padding for custom bullet */
+        }
+        .skills-list li::before {
+            content: none; /* No custom bullet for skills list */
+        }
+
+
+        /* Soft Skills list formatting */
+        .soft-skills-list ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.3rem 1.2rem; /* Compact gap for soft skills */
+            padding-left: 0;
+            list-style-type: none;
+            margin-bottom: 0.5rem;
+        }
+        .soft-skills-list li {
+            margin-bottom: 0;
+            font-size: 0.9rem;
+            padding-left: 0;
+        }
+        .soft-skills-list li::before {
+            content: none;
+        }
+
+
+        /* Ensure consistent spacing for article sections */
+        section > article {
+            margin-bottom: 0.75rem; /* Space between different entries */
+        }
+        section > article:last-child {
+            margin-bottom: 0; /* No margin after the last article in a section */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <header class="header-section">
+            <h1 class="header-name">VEDIKA SHAILENDRA KUMAR</h1>
+            <p class="header-subheading">Graduate AI Engineer | Glasgow, Scotland</p>
+            <div class="contact-info">
+                <span>+44 7901849758</span>
+                <span>|</span>
+                <span>vedikaskumar171@gmail.com</span>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/vedika-shailendra-kumar-197a65205/">linkedin.com/in/vedika-shailendra-kumar-197a65205/</a>
+            </div>
+        </header>
+        <hr class="thin-separator">
+
+        <section>
+            <p class="summary-text">
+                MSc Sensors and Imaging Systems graduate with Python, TensorFlow, and machine learning expertise ready to deliver AI-driven public sector solutions. A collaborative, analytical problem-solver adept at Git, passionate about contributing to Storm ID's Agentic Workflow Engine and technical proficiency in an agile environment. Her proven ability to design and implement AI models for impactful projects makes her ideal for this role.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Education</h2>
+            <article>
+                <div class="entry-title">
+                    <h3>MSc in Sensors and Imaging Systems (Joint Degree)</h3>
+                    <p>Sept 2024 – Sept 2025 (Expected 2:1)</p>
+                </div>
+                <p class="location-info">University of Glasgow & University of Edinburgh, School of Engineering</p>
+                <ul>
+                    <li>Thesis: Pixel Detectors for ATLAS, leveraging AI for sensor data analysis and system optimization.</li>
+                </ul>
+            </article>
+            <article>
+                <div class="entry-title">
+                    <h3>BSc (Honors) in Instrumentation</h3>
+                    <p>Aug 2020 – Jul 2023 (First Class Honours)</p>
+                </div>
+                <p class="location-info">University of Delhi, Bhaskaracharya College of Applied Sciences</p>
+            </article>
+        </section>
+
+        <section class="skills-list">
+            <h2 class="section-heading">Technical Skills</h2>
+            <ul>
+                <li><strong>Programming & AI Tools:</strong> Python (Pandas, NumPy, Matplotlib, Scikit-learn, TensorFlow), SQL, LabVIEW, MATLAB, Simulink</li>
+                <li><strong>AI & Data:</strong> Machine learning model development, data pipelines, hyperspectral data analysis, adaptive filtering</li>
+                <li><strong>Version Control:</strong> Actively learning Git (exploring repository management, branching, and pull requests)</li>
+                <li><strong>Software & Standards:</strong> Microsoft Office Suite, HubSpot CRM, IEC 60601, 3GPP Rel. 16</li>
+                <li><strong>Methodologies:</strong> Agile collaboration, user story refinement, prototyping, ethical AI compliance</li>
+            </ul>
+        </section>
+
+        <section class="soft-skills-list">
+            <h2 class="section-heading">Soft Skills</h2>
+            <ul>
+                <li>Analytical problem-solving, cross-functional collaboration, technical communication, adaptability, curiosity, commitment to socially impactful projects</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Project Experience</h2>
+            <article>
+                <div class="entry-title">
+                    <h3>AI-Driven Plastic Sorting System</h3>
+                    <p>Python, LabVIEW, Scikit-learn, TensorFlow</p>
+                </div>
+                <ul>
+                    <li>Developed machine learning models using Scikit-learn and explored TensorFlow for optimized deployment, achieving 95% classification accuracy for plastic types with hyperspectral/sCMOS sensor data, enhancing recycling efficiency by 35%.</li>
+                    <li>Built data pipelines in Python to process real-time sensor data, integrating with LabVIEW for conveyor automation (200+ items/min), validated through version control workflows.</li>
+                    <li>Expressed keen interest in leveraging Azure Machine Learning for scalable cloud-based deployment, aligning with public sector environmental goals.</li>
+                    <li>Collaborated with a multi-disciplinary team to refine user stories, tested solutions for ethical compliance, and documented processes, projecting a 12-ton/year landfill waste reduction.</li>
+                </ul>
+            </article>
+            <article>
+                <div class="entry-title">
+                    <h3>Real-Time ECG Signal Processor</h3>
+                    <p>Python, FIR/LMS Filters</p>
+                </div>
+                <ul>
+                    <li>Designed and implemented adaptive FIR/LMS filters in Python, achieving 95% detection accuracy at 6dB SNR for healthcare IoT applications, compliant with IEC 60601-2-47.</li>
+                    <li>Built data pipelines for real-time signal processing, reducing 50 Hz interference by 40% with <1ms latency, managed via version control.</li>
+                    <li>Worked with a 5-member agile team to integrate the system with a cloud-based dashboard, refining user requirements for remote patient monitoring.</li>
+                    <li>Conducted code reviews and documented solutions to ensure reliability and reproducibility.</li>
+                </ul>
+            </article>
+            <article>
+                <div class="entry-title">
+                    <h3>Microstrip Patch Antenna Design</h3>
+                    <p>CST Studio Suite, HFSS</p>
+                </div>
+                <ul>
+                    <li>Developed a 28 GHz antenna with >82% radiation efficiency, using Python for data analysis to optimize design parameters for 5G FR2 bands.</li>
+                    <li>Prototyped and tested solutions via FEM simulation, achieving <-15dB return loss and VSWR <1.8, compliant with 3GPP standards, using version control for design iterations.</li>
+                    <li>Investigated novel isolation techniques (TaN guard-ring), reducing crosstalk by >17dB, and documented findings for cross-functional teams.</li>
+                </ul>
+            </article>
+            <article>
+                <div class="entry-title">
+                    <h3>Delta-Sigma Modulator Design for Audio ADCs</h3>
+                    <p>MATLAB, Simulink</p>
+                </div>
+                <ul>
+                    <li>Spearheaded a 4th-order CIFF ΔΣ modulator, achieving 110dB SQNR and -98dB THD, meeting IEC 60601 audio specifications.</li>
+                    <li>Explored and implemented a DWA algorithm to maintain -95dB THD under 1% DAC mismatch, ensuring robust linearity.</li>
+                    <li>Tested and validated the system under non-idealities, documenting results to support scalable mixed-signal IC designs.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Work Experience</h2>
+            <article>
+                <div class="entry-title">
+                    <h3>Programme Representative, MSc Sensors and Imaging Systems</h3>
+                    <p>Sept 2024 – Present</p>
+                </div>
+                <p class="location-info">University of Glasgow & University of Edinburgh, School of Engineering</p>
+                <ul>
+                    <li>Advocated for a 20% increase in lab access by analyzing usage logs, enhancing team productivity and resource availability for 50+ students.</li>
+                    <li>Facilitated communication between students and faculty, refining lab schedules to align with project deadlines and user needs.</li>
+                    <li>Organized and volunteered for the Glasgow Science Festival, promoting STEM engagement through hands-on activities and community outreach.</li>
+                </ul>
+            </article>
+            <article>
+                <div class="entry-title">
+                    <h3>Post Graduate Representative, The Molly Fergusson Initiative</h3>
+                    <p>April 2025 – Present</p>
+                </div>
+                <p class="location-info">University of Edinburgh</p>
+                <ul>
+                    <li>Championed inclusivity by leading workshops for events like INWED 2025, raising awareness of women in STEM and increasing student engagement by 15%.</li>
+                    <li>Coordinated staff-student collaboration initiatives, developing action plans to integrate diverse feedback into curriculum enhancements.</li>
+                    <li>Represented postgraduate students in faculty meetings, advocating for resources to support underrepresented groups and enhance academic equity.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Certifications</h2>
+            <ul>
+                <li><strong>IBM Data Science Certificate (Coursera):</strong> Applied Python, SQL, and machine learning to real-world data challenges, completing a capstone project on actionable insights.</li>
+                <li><strong>McKinsey Forward Program:</strong> Trained in data-driven decision-making and agile collaboration for technical workflows.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-heading">Additional Information</h2>
+            <ul>
+                <li>Passionate about public sector AI, with a focus on healthcare and environmental applications to drive social impact.</li>
+                <li>Actively learning Git to support collaborative code management, exploring branching and pull requests.</li>
+                <li>Enthusiastic about pursuing Azure certifications and contributing to Storm ID’s Agentic Workflow Engine.</li>
+                <li>Adaptable to remote, agile environments, with a proactive approach to exploring emerging AI technologies like TensorFlow and Azure AI.</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
